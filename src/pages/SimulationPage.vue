@@ -5,7 +5,7 @@
         title="Simulation"
         :subtitle="`Current week: ${store.state.league?.currentWeek ?? '-'}${store.state.league?.prediction ? ' (Prediction active)' : ''}`"
       >
-        <button
+        <button v-if="false"
           class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-slate-50 disabled:opacity-60"
           @click="toFixture"
           :disabled="store.state.loading"
@@ -104,6 +104,7 @@ const weekMatches = computed(() => {
 });
 
 function toFixture() {
+  store.resetLeague();
   router.push("/fixture");
 }
 
