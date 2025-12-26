@@ -47,7 +47,7 @@ const router = useRouter();
 const store = useLeagueStore();
 
 async function refresh() {
-  //await store.refreshLeague();
+  await store.refreshLeague();
   await store.resetLeague();
 }
 
