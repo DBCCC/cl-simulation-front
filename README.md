@@ -1,12 +1,18 @@
-League Simulation API (Backend)
+League Simulation UI (Frontend)
 
- Kullanılan Teknolojiler
+Kullanılan Teknolojiler
 
-- Node.js
-- Express.js
-- Jest + Supertest
+- Vue 3
+- Vite
+- Composition API
+- Vue Router (history mode)
+- TailwindCSS
 
-Localde Çalıştırma
+Localde Çalıştırmak 
 
-npm install
-npm run dev
+Local ortamda backend ile çalışmak için .env dosyasında aşağıdaki değişken tanımlı olmalıdır:
+VITE_API_BASE=http://localhost:3000/api/league
+ npm install
+ npm run dev
+
+ 
